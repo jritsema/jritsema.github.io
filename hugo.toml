@@ -1,4 +1,3 @@
-publishDir = "docs"
 baseurl = "https://johnritsema.com"
 title = "John Ritsema"
 theme = "holy"
