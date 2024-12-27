@@ -1,0 +1,10 @@
+<footer>
+  <div class="f:fade-30 f:14 mb:8">{{ .Site.Params.copyright }}</div>
+  {{ range .Site.Params.social }}
+  <span class="f:fade-30 f:14 mb:8">
+    <a href="{{ .url }}" target="_blank">
+      <i class="{{ .icon }}"></i>
+    </a>
+  </span>
+  {{ end }}
+</footer>

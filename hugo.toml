@@ -1,0 +1,66 @@
+baseurl = "https://johnritsema.com"
+title = "John Ritsema"
+theme = "holy"
+languagecode = "en"
+defaultcontentlanguage = "en"
+
+[pagination]
+pagerSize = 20
+
+[services]
+[services.disqus]
+shortname = "yourdiscussshortname"
+
+[markup.highlight]
+style = "github-dark"
+
+[params]
+author = "John Ritsema"
+description = "John Ritsema's personal website"
+keywords = "blog,developer,personal"
+avatarurl = "images/avatar.jpg"
+copyright = "2024 © John Ritsema."
+
+mainSections = ["posts"]
+
+faviconSVG = "/img/favicon.svg"
+favicon_32 = "/img/favicon-32x32.png"
+favicon_16 = "/img/favicon-16x16.png"
+
+enableTwemoji = true
+
+colorScheme = "auto"
+hidecolorschemetoggle = false
+
+[taxonomies]
+category = "categories"
+series = "series"
+tag = "tags"
+author = "authors"
+
+# Social links
+[[params.social]]
+name = "Github"
+icon = "fa-brands fa-github fa-1x"
+weight = 1
+url = "https://github.com/jritsema/"
+
+[[params.social]]
+name = "Bluesky"
+icon = "fa-brands fa-bluesky fa-1x"
+weight = 1
+url = "https://bsky.app/profile/johnritsema.com"
+
+# Menu links
+[[menu.main]]
+name = "Posts"
+weight = 1
+url = "/"
+[[menu.main]]
+name = "Projects"
+weight = 2
+url = "/projects/"
+[[menu.main]]
+name = "About"
+weight = 3
+url = "/about/"
