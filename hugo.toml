@@ -51,6 +51,12 @@ icon = "fa-brands fa-bluesky fa-1x"
 weight = 1
 url = "https://bsky.app/profile/johnritsema.com"
 
+[[params.social]]
+name = "LinkedIn"
+icon = "fa-brands fa-linkedin fa-1x"
+weight = 1
+url = "https://www.linkedin.com/in/johnritsema"
+
 # Menu links
 [[menu.main]]
 name = "Posts"
