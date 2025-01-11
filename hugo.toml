@@ -4,6 +4,14 @@ theme = "holy"
 languagecode = "en"
 defaultcontentlanguage = "en"
 
+[params]
+author = "John Ritsema"
+description = "John Ritsema's personal website"
+keywords = "blog,developer,personal"
+avatarurl = "images/avatar.jpg"
+copyright = "2024 © John Ritsema."
+og_image = "johnritsema.png"
+
 [pagination]
 pagerSize = 20
 
@@ -16,13 +24,6 @@ style = "github-dark"
 
 [markup.goldmark.renderer]
 unsafe = true # Allows raw HTML
-
-[params]
-author = "John Ritsema"
-description = "John Ritsema's personal website"
-keywords = "blog,developer,personal"
-avatarurl = "images/avatar.jpg"
-copyright = "2024 © John Ritsema."
 
 mainSections = ["posts"]
 

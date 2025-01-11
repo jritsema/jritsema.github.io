@@ -2,17 +2,15 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
     <title>{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ site.Title }}</title>
+    <link rel="icon" href="{{ "favicon.ico" | relURL }}" type="image/x-icon">
 
-    <!-- Meta -->
-    {{ if eq .Kind "page" }}
-    <meta name="description" content="{{ .Summary }}" />
-    <meta name="author" content="{{ .Params.Author | default site.Author.name }}" />
-    {{ else }}
-    <meta name="description" content="{{ site.Params.description }}" />
-    <meta name="author" content="{{ site.Author.name }}" />
-    {{ end }}
+    <meta name="author" content="{{ site.Params.Author }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{{ .Title }}" />
+    <meta name="description" content="{{ .Summary | default site.Params.description }}" />
+    <meta property="og:description" content="{{ .Summary | default site.Params.description }}" />
+    <meta property="og:image" content="{{ .Params.og_image | default site.Params.og_image }}" />
 
     <link href="https://unpkg.com/@master/normal.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">

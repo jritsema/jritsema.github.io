@@ -1,6 +1,8 @@
 ---
 title: Simplify Your Bedrock Converse API Integration with the bedrock-tools Python Library
 date: 2024-10-25T12:00:00Z
+summary: "This post introduce bedrock-tools, a Python library I wrote to streamline the integration of custom Python functions with the Amazon Bedrock Converse API for building conversational AI agents and applications."
+og_image: "https://assets.community.aws/a/2nwYYdebJFvF7rqEHqQkdevH9G7/diff.webp?imgSize=4226x2080"
 ---
 
 I wrote this [post](https://community.aws/content/2lG8i8QCsoqaZLi4XjSSt15gqTD) to introduce [bedrock-tools](https://github.com/jritsema/bedrock-tools), a [Python library](https://pypi.org/project/bedrock-tools/) I wrote to streamline the integration of custom Python functions with the [Amazon Bedrock Converse API](https://docs.aws.amazon.com/bedrock/latest/userguide/conversation-inference.html) for building conversational AI agents and applications. The library minimizes boilerplate code, automates type handling by generating JSON schemas from function annotations, and manages tool invocation and exception handling seamlessly. By enabling developers to define tools as simple Python functions, **bedrock-tools** simplifies the development process, allowing a focus on core application functionality.

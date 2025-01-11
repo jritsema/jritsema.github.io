@@ -1,6 +1,7 @@
 ---
 title: "Projects"
 draft: false
+summary: "I am passionate about building tools and systems that help developers be more productive and successful. Here is a collection of open-source projects I have created or contributed to over the years, organized by focus area."
 ---
 
 I am passionate about building tools and systems that help developers be more productive and successful. Here is a collection of open-source projects I have created or contributed to over the years, organized by focus area.

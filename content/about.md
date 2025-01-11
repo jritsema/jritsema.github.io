@@ -1,6 +1,7 @@
 ---
 title: "About"
 draft: false
+summary: "About John Ritsema"
 ---
 
 Hey there! I'm John Ritsema, a Principal Solutions Architect at [AWS](https://aws.amazon.com/) based in Marietta, Georgia. As a lifelong learner with a passion for solving complex technical challenges, I specialize in AI, containers, DevOps, internal developer platforms, and distributed systems. Throughout my career, I've earned a software patent, led major enterprise modernization initiatives, and built platforms handling hundreds of thousands of requests per second.
