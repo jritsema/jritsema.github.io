@@ -1,7 +1,6 @@
-<div class="mb:12 py:8">
-    <a class="f:18! font:semibold! f:fade-30! text-decoration:none f:fade-10!:hover transition:150ms;ease-in" href="{{ .url }}">
-        {{ .title }}
-    </a>
-    <div class="mt:12 f:14 f:fade-60"><time>{{ .subTitle }}</time></div>
-    {{ .hi }}
+<div
+  class="mb:12 py:8 _:where(a):hover{text-decoration-color:fade} _:where(a){text-decoration:2;underline;fade-10;_text-decoration-color:fade-70@dark}">
+  <a class="f:18 font:medium" href="{{ .url }}"> {{ .title }} </a>
+  <div class="mt:12 f:14 f:fade-60"><time>{{ .subTitle }}</time></div>
+  {{ .hi }}
 </div>
