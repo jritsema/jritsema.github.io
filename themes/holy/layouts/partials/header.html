@@ -8,6 +8,16 @@
         d:flex
         align-items:center
     ">
+        <span>
+            <a href="/">
+                <img
+                    src="{{.Site.Params.og_image | relURL}}"
+                    alt="{{.Site.Params.og_image_alt}}"
+                    width="32" height="32"
+                    style="border-radius: 10px;"
+                >
+            </a>
+        </span>&nbsp;&nbsp;
         <div>
             <a href="/" class="mr-3 font:extralight">
               {{ if not .Site.Params.HeaderTitle }}
