@@ -53,8 +53,6 @@ mcp config set tool ~/.aws/amazonq/mcp.json
 Next, set up your MCP servers in the `mcp-compose.yml` file. Here is an example:
 
 ```sh
-cd ~/.config/mcp
-
 cat << EOF > ~/.config/mcp/mcp-compose.yml
 services:
   time:
