@@ -2,6 +2,7 @@
 title: "MCP CLI"
 date: 2025-05-04T12:00:00Z
 og_image: "https://raw.githubusercontent.com/modelcontextprotocol/.github/refs/heads/main/profile/assets/light.png"
+summary: "This post introduces MCP CLI, a tool for managing MCP server configuration files"
 ---
 
 If you're in the IT industry, you've likely heard of MCP, or [Model Context Protocol](https://modelcontextprotocol.io/). This emerging protocol, initially introduced by [Anthropic](https://www.anthropic.com/), is experiencing massive growth in adoption as it allows third parties to extend the power of large language models (LLMs) by giving them access to the outside world through the use of MCP servers. I'm not going to cover MCP in this post, however, it's important to note that number of MCP servers have proliferated across the industry since the [release of the MCP specification in November 2024](https://www.anthropic.com/news/model-context-protocol), . Here is a small sample of places where you can find MCP servers:
