@@ -9,9 +9,11 @@ I am passionate about building tools and systems that help developers be more pr
 ## AI
 As AI transforms the technology landscape, I have been building tools to help developers leverage these powerful capabilities:
 
-- **[MCP CLI](https://github.com/jritsema/mcp-cli)** - MCP CLI is a tool for managing MCP server configuration files.
+- **[Bedrock AgentCore Memory Explorer](https://github.com/jritsema/agentcore-memory-explorer)** - A modern web UI for exploring and visualizing AWS Bedrock AgentCore memory data. (vibe coded)
+- **[MCP CLI](https://github.com/jritsema/mcp-cli)** - MCP CLI is a tool for managing MCP server configuration files. (vibe coded)
 - **[AI Chat Accelerator](https://github.com/aws-samples/ai-chat-accelerator)** - A production-ready reference implementation for building RAG-based AI chat applications on AWS.
 - **[Bedrock Tools](https://github.com/jritsema/bedrock-tools)** - A streamlined Python library for working with Amazon Bedrock's Conversation API.
+- **[AWS News MCP Server](https://github.com/jritsema/aws-news-mcp-server)** - MCP server for AWS news.
 - **[AWS News Agent](https://github.com/jritsema/aws-news-agent)** - An AI-powered assistant that helps you stay current with AWS news and announcements.
 - **[Page Insights](https://github.com/jritsema/page-insights)** - Leverage AI to generate intelligent summaries of web pages.
 
