@@ -9,6 +9,7 @@ I am passionate about building tools and systems that help developers be more pr
 ## AI
 As AI transforms the technology landscape, I have been building tools to help developers leverage these powerful capabilities:
 
+- **[AI Agent Accelerator](https://github.com/aws-samples/ai-chat-accelerator)** - Get up and running quickly with an AI agent application on AWS using Bedrock AgentCore and S3 Vectors.
 - **[Bedrock AgentCore Memory Explorer](https://github.com/jritsema/agentcore-memory-explorer)** - A modern web UI for exploring and visualizing AWS Bedrock AgentCore memory data. (vibe coded)
 - **[MCP CLI](https://github.com/jritsema/mcp-cli)** - MCP CLI is a tool for managing MCP server configuration files. (vibe coded)
 - **[AI Chat Accelerator](https://github.com/aws-samples/ai-chat-accelerator)** - A production-ready reference implementation for building RAG-based AI chat applications on AWS.
