@@ -1,7 +1,7 @@
 ---
 title: "Exploring Bedrock AgentCore: Building an AI Agent Accelerator Reference Implementation"
 date: 2025-08-16T12:00:00Z
-og_image: "posts/agentcore-ai-agent-accelerator/architecture.png"
+og_image: "https://johnritsema.com/posts/agentcore-ai-agent-accelerator/architecture.png"
 summary: "This post describes the new Bedrock AgentCore services and tools announced by AWS, and how the author used them to build an AI agent reference implementation. The key features highlighted are session isolation, managed agent memory, agentic vs traditional retrieval-augmented generation, serverless vector storage, and built-in observability, which improve upon the previous AI Chat Accelerator project."
 ---
 
