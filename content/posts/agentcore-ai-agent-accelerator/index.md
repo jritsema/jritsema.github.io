@@ -11,6 +11,8 @@ In this post, I'll discuss some of the services and tools that make up Bedrock A
 
 ## What is Bedrock AgentCore?
 
+![Bedrock AgentCore](https://i.ytimg.com/vi/YDqTaZ4dpXc/maxresdefault.jpg)
+
 According to the [docs](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html):
 
 > "AgentCore enables developers to accelerate AI agents into production with the scale, reliability, and security, critical to real-world deployment. AgentCore provides services and tools to make agents more effective and capable, purpose-built infrastructure to securely scale agents, and controls to operate trustworthy agents."
@@ -46,7 +48,10 @@ At its core, an AI agent is a code loop that repeatedly invokes an LLM API, buil
 
 AgentCore Memory provides a straightforward API supporting both short-term and long-term memory. While building your own short-term memory persistence is relatively straightforward, converting memories into long-term memory requires more work. When creating a memory in AgentCore Memory, you specify a `strategy` (options include `user preferences`, `semantic facts`, `summary`, or `custom`), and the service handles the rest, converting short-term memories to long-term memories in the background.
 
-When building with this service, I wanted to see how memories were stored.  I said to myself, "I wish there was an app for that", but now with the use of AI-assisted development tools I said, "let's just make one". I ended up using [Kiro](https://kiro.dev/) to [vibe code](https://en.wikipedia.org/wiki/Vibe_coding) the [AgentCore Memory Explorer](https://github.com/jritsema/agentcore-memory-explorer) tool in a matter of minutes. I simply pointed Kiro at the new [AgentCore Memory boto3 docs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/bedrock-agentcore.html) and told it what I wanted!
+When building with this service, I wanted to see how memories were stored.  I said to myself, "I wish there was an app for that", but now with the use of AI-assisted development tools I said, "let's just make one". I ended up using [Kiro](https://kiro.dev/) to [vibe code](https://en.wikipedia.org/wiki/Vibe_coding) the [AgentCore Memory Explorer](https://github.com/jritsema/agentcore-memory-explorer) tool in a matter of minutes. I simply pointed Kiro at the new [AgentCore Memory boto3 docs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/bedrock-agentcore.html) and told it what I wanted! You can see a screenshot in figure 2 below.
+
+![Screenshot of the vibe coded AgentCore Memory Explorer app](https://raw.githubusercontent.com/jritsema/agentcore-memory-explorer/refs/heads/main/ui.png)
+<small>Figure 2 - Screenshot of the vibe coded AgentCore Memory Explorer app</small>
 
 ### AgentCore Observability
 
@@ -74,15 +79,15 @@ CMD ["opentelemetry-instrument", "python", "-u", "main.py"]
 
 This provides dozens of runtime, memory, gateway, and tool metrics. If your agent code is also instrumented with OTEL (which [Strands Agents](https://aws.amazon.com) provides), you'll be able to trace an entire agent request from start to finish, understanding exactly what it's doing, how many LLM calls it's making, how long they take, and even drill into the model payloads.
 
-![Figure 2 - GenAI Observability](tracing.png)
-<small>Figure 2 - GenAI Observability showing a user/agent interaction trace</small>
+![Figure 3 - GenAI Observability](tracing.png)
+<small>Figure 3 - GenAI Observability showing a user/agent interaction trace</small>
 
 ## AI Chat Accelerator vs AI Agent Accelerator
 
 Now I'll explain how I'm using these AgentCore services in the new AI Agent Accelerator project. The [AI Chat Accelerator](https://github.com/aws-samples/ai-chat-accelerator) (described in detail [here](https://community.aws/content/2lCaIftOHliEE7Hhzg3cc7N021J)) is a web chatbot where users ask questions and receive answers based on documents stored in an S3 bucket. When building the new [AI Agent Accelerator](https://github.com/aws-samples/sample-ai-agent-accelerator), I wanted to provide the same capabilities but use the latest AWS services. Here's the new reference implementation:
 
-![Figure 3 - The AI Agent Accelerator reference architecture](architecture.png)
-<small>Figure 3 - AI Agent Accelerator</small>
+![Figure 4 - The AI Agent Accelerator reference architecture](architecture.png)
+<small>Figure 4 - AI Agent Accelerator</small>
 
 The key differences between the two architectures are:
 
@@ -154,7 +159,7 @@ async def invoke_agent(request: Request):
         raise HTTPException(
             status_code=500, detail=f"Agent processing failed: {str(e)}")
 ```
-<small>Figure 4 - AgentCore Runtime python code showing agent initialization</small>
+<small>Figure 5 - AgentCore Runtime python code showing agent initialization</small>
 
 #### Agentic vs traditional RAG
 
