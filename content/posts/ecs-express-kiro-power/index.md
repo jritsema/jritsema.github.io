@@ -1,8 +1,8 @@
 ---
 title: "From CLIs to Conversational AI Deployments: Building a Kiro Power for ECS Express"
 date: 2026-01-06T12:00:00Z
-og_image: "https://johnritsema.com/posts/ecs-express-kiro-power"
-summary: "Kiro Powers combine agent skills with MCP servers for progressive capability loading. I built one for AWS ECS Express Mode that handles container builds, IAM setup, and deployment monitoring through natural conversation."
+og_image: "https://johnritsema.com/posts/ecs-express-kiro-power/installed.png"
+summary: "What if the AI is the deployment tool? I built a Kiro Power for ECS Express that infers config, calls AWS APIs, and monitors deployments through natural conversation."
 ---
 
 ## Why I Keep Rebuilding Deployment Tools
