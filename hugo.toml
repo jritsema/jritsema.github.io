@@ -9,7 +9,7 @@ author = "John Ritsema"
 description = "John Ritsema's personal website"
 keywords = "blog,developer,personal"
 avatarurl = "images/avatar.jpg"
-copyright = "2025 © John Ritsema."
+copyright = "2026 © John Ritsema."
 og_image = "johnritsema.png"
 og_image_alt = "JohnRitsema.com logo"
 
@@ -51,16 +51,22 @@ weight = 1
 url = "https://github.com/jritsema/"
 
 [[params.social]]
-name = "Bluesky"
-icon = "fa-brands fa-bluesky fa-1x"
-weight = 1
-url = "https://bsky.app/profile/johnritsema.com"
-
-[[params.social]]
 name = "LinkedIn"
 icon = "fa-brands fa-linkedin fa-1x"
 weight = 1
 url = "https://www.linkedin.com/in/johnritsema"
+
+[[params.social]]
+name = "X (Twitter)"
+icon = "fa-brands fa-x-twitter fa-1x"
+weight = 1
+url = "https://x.com/jritsema"
+
+[[params.social]]
+name = "Bluesky"
+icon = "fa-brands fa-bluesky fa-1x"
+weight = 1
+url = "https://bsky.app/profile/johnritsema.com"
 
 # Menu links
 [[menu.main]]
