@@ -10,6 +10,7 @@ I am passionate about building tools and systems that help developers be more pr
 
 As AI transforms the technology landscape, I have been building tools to help developers leverage these powerful capabilities:
 
+- **[AgentCore Gateway Lambda Tool Template](https://github.com/jritsema/aws-lambda-mcp-tools)** -  Build MCP tools for Amazon Bedrock AgentCore Gateway without the boilerplate
 - **[ECS Express Skill / Kiro Power](https://github.com/jritsema/ecs-express-power/)** - An Agent Skill and Kiro Power to assist with deploying web apps and APIs to AWS using Amazon ECS Express Mode.
 - **[AI Agent Accelerator](https://github.com/aws-samples/sample-ai-agent-accelerator)** - Get up and running quickly with an AI agent application on AWS using Bedrock AgentCore and S3 Vectors.
 - **[Bedrock AgentCore Memory Explorer](https://github.com/jritsema/agentcore-memory-explorer)** - A modern web UI for exploring and visualizing AWS Bedrock AgentCore memory data. (vibe coded)
