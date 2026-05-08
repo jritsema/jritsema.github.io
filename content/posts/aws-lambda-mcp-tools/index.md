@@ -23,7 +23,8 @@ So where do tools live? That's where [AgentCore Gateway](https://docs.aws.amazon
 
 Gateway provides more than just connectivity:
 
-- **Policy enforcement** - [AgentCore Policy](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy.html) integration that uses [Cedar](https://www.cedarpolicy.com/)-based authorization to control which users and agents can call which tools, evaluated on every request
+- **Protocol translation** - converts MCP requests from agents into native API calls or Lambda invocations, so your tools don't need to implement MCP themselves
+- **Policy enforcement** - [AgentCore Policy](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy.html) uses [Cedar](https://www.cedarpolicy.com/)-based authorization to control which users and agents can call which tools, evaluated on every request
 - **Managed authentication** - handles both ingress (verifying agent identity) and egress (injecting credentials, refreshing OAuth tokens)
 - **Semantic tool selection** - agents can search across large tool collections to find the right tool for their task, rather than relying on a static list
 
